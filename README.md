@@ -54,7 +54,7 @@ pip install --upgrade pip
 pip install pybind11 wheel setuptools
 
 sudo apt-get update
-sudo apt-get install -y python3-dev build-essential
+sudo apt-get install -y python3.11-dev build-essential
 
 pip install -e .[gpu]
 ```
