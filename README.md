@@ -45,7 +45,19 @@ pip install 'git+https://github.com/magenta/magenta-realtime'
 Or, clone and install for local editing:
 
 ```sh
+
 git clone https://github.com/magenta/magenta-realtime.git && cd magenta-realtime
+python3.11 -m venv .venv
+source .venv/bin/activate
+python3.11 -m ensurepip --upgrade
+pip install --upgrade pip
+pip install pybind11 wheel setuptools
+
+sudo apt-get update
+sudo apt-get install -y python3-dev build-essential
+
+
+
 pip install -e .[gpu]
 ```
 
